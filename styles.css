@@ -1,99 +1,37 @@
+/* Estilos generales */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif; /* Utilizamos la tipografía Montserrat */
-    color: #ffffff; /* Texto blanco */
-    background-image: url(''file:///C:/Users/extfgonzalez/Downloads/delegación.png''); /* Cambia 'imagen-oscura.jpg' por tu imagen */
-    background-size: cover;
-    background-repeat: repeat; /* Repetir la imagen por toda la pantalla */
-	background-color: blue;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-}
-
-header h1 {
-    font-size: 2em;
-}
-
-nav ul {
-    list-style-type: none;
+    font-family: 'Cormorant Garamond', serif;
+    background-color: #061144;
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
-    display: inline;
-    margin-left: 20px;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Beautifully Delicious', cursive;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #ffffff; /* Texto blanco */
+p {
+    text-align: center;
 }
 
-main {
-    padding: 20px 0;
+/* Estilos para pantallas pequeñas (celulares) */
+@media only screen and (max-width: 767px) {
+    /* No hay marcos en pantallas pequeñas */
 }
 
-section {
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
-    margin-bottom: 20px;
-}
-
-.menu-toggle {
-    display: none;
-    cursor: pointer;
-}
-
-@media screen and (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
+/* Estilos para pantallas grandes */
+@media only screen and (min-width: 768px) {
+    /* Agregamos marcos de al menos 40px */
+    body {
+        padding: 40px;
     }
-
-    .menu-toggle {
-        display: block;
-        margin-top: 10px;
+    /* Centramos el contenido */
+    nav, section {
+        margin: auto;
+        max-width: 800px; /* Ancho máximo del contenido */
     }
-
-    nav {
-        display: none;
-        width: 100%;
-    }
-
-    nav.active {
-        display: block;
-    }
-
-    nav ul {
+    /* Centramos el texto en pantallas grandes */
+    nav ul, section {
         text-align: center;
     }
-
-    nav ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
-}
-/* Este código es el mismo que antes */
-
-.animated-section {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.animated-section.visible {
-    opacity: 1;
-    transform: translateY(0);
 }

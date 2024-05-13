@@ -16,9 +16,10 @@ p {
     color: #D8BFA0; /* Color del texto */
 }
 ul {
-        list-style-type: none;
-        padding: 0;
-    }
+    list-style-type: none;
+    padding: 0;
+    color: #D8BFA0; /* Color del texto */
+}
 
 /* Estilos para pantallas pequeñas (celulares) */
 @media only screen and (max-width: 767px) {
@@ -32,12 +33,19 @@ ul {
         padding: 40px;
     }
     /* Centramos el contenido */
-    nav, section {
-        margin: auto;
-        max-width: 800px; /* Ancho máximo del contenido */
+nav, section {
+    margin: auto;
+    max-width: 800px; /* Ancho máximo del contenido */
+}
+/* Centramos el texto en pantallas grandes */
+nav ul, section {
+    text-align: center;
+}
+    nav ul li a {
+        color: #D8BFA0; /* Color del texto del índice */
+        text-decoration: none; /* Quitar subrayado de los enlaces */
     }
-    /* Centramos el texto en pantallas grandes */
-    nav ul, section {
-        text-align: center;
+    nav ul li a:visited {
+        color: rgba(216, 191, 160, 0.7); /* Color del texto del índice visitado con 70% de opacidad */
     }
 }

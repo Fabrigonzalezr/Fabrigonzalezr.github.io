@@ -13,6 +13,7 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    text-align: center; /* Centrar el contenido */
 }
 
 /* Estilos para los títulos */
@@ -48,6 +49,7 @@ h6 {
 /* Estilos para los párrafos */
 p {
     margin: 15px 0;
+    text-align: left; /* Alinear el texto a la izquierda */
 }
 
 /* Estilos para los enlaces */
@@ -64,6 +66,7 @@ a:hover {
 ul, ol {
     margin: 15px 0;
     padding-left: 20px;
+    text-align: left; /* Alinear el texto a la izquierda */
 }
 
 /* Estilos para las imágenes */

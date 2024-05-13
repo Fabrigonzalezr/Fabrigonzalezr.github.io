@@ -2,17 +2,22 @@
 body {
     font-family: 'Cormorant Garamond', serif;
     background-color: #061144;
+    color: #D8BFA0;
     margin: 0;
     padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Beautifully Delicious', cursive;
+    font-family: 'Beautifully Delicious', sans-serif;
 }
 
 p {
     text-align: center;
 }
+ul {
+        list-style-type: none;
+        padding: 0;
+    }
 
 /* Estilos para pantallas pequeñas (celulares) */
 @media only screen and (max-width: 767px) {

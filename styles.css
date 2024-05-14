@@ -1,100 +1,75 @@
-/* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
+    font-family: "Lora", serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    background-color: #061144;
 }
 
-/* Contenedor principal */
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center; /* Centrar el contenido */
+h1, h2{
+    font-family: "Work Sans", sans-serif;
+    font-weight: 300;
+    letter-spacing: 5px;
+    text-align: center;
 }
 
-/* Estilos para los títulos */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
-    margin-top: 30px;
+a :hover{
+    opacity: 0.7;
 }
 
-h1 {
-    font-size: 2.5em;
-}
-
-h2 {
-    font-size: 2em;
-}
-
-h3 {
-    font-size: 1.5em;
-}
-
-h4 {
-    font-size: 1.2em;
-}
-
-h5 {
-    font-size: 1.1em;
-}
-
-h6 {
-    font-size: 1em;
-}
-
-/* Estilos para los párrafos */
-p {
-    margin: 15px 0;
-    text-align: left; /* Alinear el texto a la izquierda */
-}
-
-/* Estilos para los enlaces */
-a {
-    color: #0078d4;
+#l1, a{
+    
+    font-family: "Work Sans", sans-serif;
+    color:#D8BFA0;
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
+
+p, ul{
+    margin: 25px;
 }
 
-/* Estilos para las listas */
-ul, ol {
-    margin: 15px 0;
-    padding-left: 20px;
-    text-align: left; /* Alinear el texto a la izquierda */
+
+.header {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 350;
+    font-size: larger;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #061144;
+    color: #D8BFA0;
+    padding: 0;
+    text-align: center;
+    z-index: 999;
+    letter-spacing: 5px;
 }
 
-/* Estilos para las imágenes */
-img {
-    max-width: 100%;
-    height: auto;
+.content {
+    margin-top: 60px; /* Para evitar que el contenido se superponga con el título fijo */
+    font-size: 16px; /* Tamaño de letra predeterminado */
+    color:#D8BFA0;
+}
+.content img{
+    width: 500px;
+    display: block;
+    margin:auto;
 }
 
-/* Estilos para las citas */
-blockquote {
-    margin: 0;
-    padding-left: 20px;
-    border-left: 3px solid #0078d4;
-    color: #666;
-}
-
-/* Estilos para código */
-code {
-    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-    background-color: #f0f0f0;
-    padding: 2px 4px;
-    border-radius: 4px;
-}
-
-/* Estilos para preformateado */
-pre {
-    background-color: #f0f0f0;
-    padding: 10px;
-    border-radius: 4px;
-    overflow-x: auto;
+@media screen and (max-width: 600px) {
+    .header {
+        font-size: 15px; /* Tamaño de letra en pantallas pequeñas */
+    }
+    .content {
+        margin-top: 80px; /* Margen mayor en pantallas pequeñas */
+        font-size: 14px; /* Tamaño de letra en pantallas pequeñas */
+    }
+    .content img{
+        width:300px;
+        display: block;
+        margin:auto;
+    }
 }

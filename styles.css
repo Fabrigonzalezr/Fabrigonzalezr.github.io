@@ -31,10 +31,8 @@ a :hover{
     opacity: 0.7;
 }
 
-#l1, a{
-    
-    font-family: "Work Sans", sans-serif;
-    color:#D8BFA0;
+a{
+    color:#A6B9D6;
     text-decoration: none;
 }
 

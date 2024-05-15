@@ -9,6 +9,11 @@ body {
     background-color: #061144;
 }
 
+.carousel-inner{
+    width: 700px;
+    display: block;
+    margin: auto;
+}
 
 h1, h2{
     font-family: "Work Sans", sans-serif;

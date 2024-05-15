@@ -9,11 +9,23 @@ body {
     background-color: #061144;
 }
 
+
 h1, h2{
     font-family: "Work Sans", sans-serif;
     font-weight: 300;
     letter-spacing: 5px;
     text-align: center;
+    margin-top: 40px;
+}
+
+#como-lo-haremos{
+    background-color: #205dbf;
+    border-radius: 10px;
+    padding: 10px 0px;
+}
+
+#como-lo-haremos, #titulo{
+    font-family: "Work Sans", sans-serif;
 }
 
 a :hover{
@@ -33,23 +45,7 @@ p, ul{
 }
 
 
-.header {
-    font-family: "Work Sans", sans-serif;
-    font-weight: 350;
-    font-size: larger;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #061144;
-    color: #D8BFA0;
-    padding: 0;
-    text-align: center;
-    z-index: 999;
-    letter-spacing: 5px;
-}
-
 .content {
-    margin-top: 60px; /* Para evitar que el contenido se superponga con el título fijo */
     font-size: 16px; /* Tamaño de letra predeterminado */
     color:#D8BFA0;
 }
@@ -59,12 +55,17 @@ p, ul{
     margin:auto;
 }
 
+.carousel-item active{
+    width: 700px;
+    display: block;
+    margin: auto;
+}
+
 @media screen and (max-width: 600px) {
     .header {
         font-size: 15px; /* Tamaño de letra en pantallas pequeñas */
     }
     .content {
-        margin-top: 80px; /* Margen mayor en pantallas pequeñas */
         font-size: 14px; /* Tamaño de letra en pantallas pequeñas */
     }
     .content img{

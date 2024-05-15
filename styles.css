@@ -9,12 +9,6 @@ body {
     background-color: #061144;
 }
 
-.content .carousel-inner{
-    width: 700px;
-    display: block;
-    margin: auto;
-}
-
 h1, h2{
     font-family: "Work Sans", sans-serif;
     font-weight: 300;
@@ -72,8 +66,10 @@ p, ul{
         display: block;
         margin:auto;
     }
+}
+@media screen and (min-width: 600px){
     .carousel-inner{
-        width: 100%;
+        width: 700px;
         display: block;
         margin: auto;
     }

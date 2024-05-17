@@ -36,6 +36,9 @@ a{
     text-decoration: none;
 }
 
+#icono{
+    width: 150px;
+}
 
 p, ul, .collapse{
     margin: 25px;
